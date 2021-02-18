@@ -6,10 +6,22 @@
   box-sizing: inherit;
 }
 
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    $color-bacground-light,
+    $color-bacground-dark-opa
+  );
+  width: 100vw;
+  height: 100vh;
+  color: $color-font-dark;
+}
+
 html {
   box-sizing: border-box;
   /* 1rem = 10px; 16px - base font size  10px/16px = 62.5% */
   font-size: 62.5%;
+  font-family: $font-family;
   scroll-behavior: smooth;
 
   @include respond(desktop-small) {
@@ -21,4 +33,13 @@ html {
   @include respond(phone) {
     font-size: 37%; // 1rem = 6px
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
