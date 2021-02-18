@@ -9,7 +9,17 @@ module.exports = merge(common, {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
+
+  module: {
+    rules: [
+      {
+        test: /\.html$/,
+        loader: 'html-loader',
+      },
+    ],
+  },
   plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
+
   module: {
     rules: [
       {
