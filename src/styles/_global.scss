@@ -7,11 +7,12 @@
 }
 
 body {
-  background-image: linear-gradient(
-    to bottom right,
-    $color-bacground-light,
-    $color-bacground-dark-opa
-  );
+  // background-image: linear-gradient(
+  //   to bottom right,
+  //   $color-bacground-light,
+  //   $color-bacground-dark-opa
+  // );
+  background: $color-bacground-dark;
   width: 100vw;
   height: 100vh;
   color: $color-font-dark;
@@ -42,4 +43,28 @@ html {
   justify-content: space-between;
   width: 100%;
   height: 100%;
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 30%;
+}
+.circle2 {
+  bottom: 40%;
+  left: 3%;
+  z-index: 4;
 }
