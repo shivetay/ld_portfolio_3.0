@@ -1,9 +1,10 @@
 .about {
-  width: 100%;
+  width: 90%;
   height: 65%;
   z-index: 10;
 
   &__container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -19,6 +20,8 @@
     background: $color-bacground-light-opa;
     backdrop-filter: blur(2rem);
     border-radius: 0 0 35rem 0;
+    border: 5px hidden transparent;
+    box-shadow: 0 10px 45px 3px $color-shadow-light-opa;
   }
   &__description {
     display: flex;
@@ -27,14 +30,25 @@
     background: $color-alter-opa;
     backdrop-filter: blur(2rem);
     border-radius: 10px;
+    box-shadow: 15px 15px 15px $color-shadow-light-opa;
 
     &-p {
-      width: 80rem;
+      width: 65rem;
       font-size: $font-normal;
       color: $color-font-light;
       letter-spacing: 1.2px;
       padding: 5rem;
       text-align: justify;
+    }
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 18%;
+    & img {
+      width: 110%;
+      height: 100%;
+      border-radius: 25%;
     }
   }
 }

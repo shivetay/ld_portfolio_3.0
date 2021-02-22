@@ -36,6 +36,19 @@ html {
   }
 }
 
+h1,
+h3 {
+  margin: 2rem 0;
+  color: $color-font-light;
+}
+
+h1 {
+  font-size: $header-h1;
+}
+h3 {
+  font-size: $header-h2;
+}
+
 .container {
   display: flex;
   flex-direction: column;
