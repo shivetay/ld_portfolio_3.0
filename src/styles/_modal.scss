@@ -8,6 +8,7 @@
   height: 100%;
   overflow: auto;
   background-color: $color-bacground-dark-opa-1;
+  box-shadow: -15px 0px 15px 5px $color-main-dark-opa;
   backdrop-filter: blur(6px);
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 
