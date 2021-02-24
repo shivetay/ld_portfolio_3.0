@@ -7,15 +7,11 @@
 }
 
 body {
-  // background-image: linear-gradient(
-  //   to bottom right,
-  //   $color-bacground-light,
-  //   $color-bacground-dark-opa
-  // );
   background: $color-bacground-dark;
   width: 100vw;
   height: 100vh;
   color: $color-font-dark;
+  overflow: hidden;
 }
 
 html {
@@ -46,7 +42,20 @@ h1 {
   font-size: $header-h1;
 }
 h3 {
-  font-size: $header-h2;
+  font-size: $header-h3;
+}
+
+a,
+a:focus,
+a:active {
+  color: $color-font-light;
+}
+
+p,
+span {
+  font-size: $font-normal;
+  color: $color-font-light;
+  letter-spacing: 1.2px;
 }
 
 .container {

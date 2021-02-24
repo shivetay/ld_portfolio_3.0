@@ -1,0 +1,17 @@
+.contact {
+  // display: none;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    text-align: center;
+  }
+  &__content {
+    margin: 2rem auto;
+    padding: 2rem;
+    z-index: 5;
+  }
+}

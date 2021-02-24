@@ -1,0 +1,82 @@
+header {
+  width: 100%;
+}
+
+.ruler {
+  border-top: 1px solid rgba(white, 0.3);
+
+  position: absolute;
+  top: 82%;
+  height: 50%;
+  left: 0%;
+  right: 0%;
+}
+
+.navigation {
+  &__container {
+    width: 100%;
+    height: 100%;
+  }
+  &__ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $color-font-light;
+    list-style: none;
+    & li,
+    li a {
+      text-decoration: none;
+      font-size: $link-big;
+      cursor: pointer;
+      transition: all 0.4s ease-in;
+    }
+    & li {
+      background: $color-alter-opa;
+      box-shadow: 5px 5px 15px 5px $color-alter-opa;
+      border-radius: 50%;
+      padding: 2.8rem 3.6rem;
+      backdrop-filter: blur(2px);
+      transition: all 0.4s ease-in;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        background: rgba(white, 0.4);
+        width: 60%;
+        height: 100%;
+        top: 0%;
+        left: -125%;
+        transform: skew(45deg);
+        position: absolute;
+        transition: left 0.5s ease-out;
+      }
+
+      &:hover {
+        transform: translateX(25%);
+
+        &::before {
+          left: 150%;
+        }
+      }
+    }
+    & li:hover {
+      background: $color-bacground-light;
+      box-shadow: 5px 5px 15px 5px $color-shadow-light-opa;
+      transform: scale(1.1);
+    }
+
+    // & li:hover & li:not(:hover) {
+    //   background: $color-bacground-light-opa;
+    //   box-shadow: none;
+    //   transform: scale(0.6) rotate(90deg);
+
+    //   & a {
+    //     color: $color-bacground-dark;
+    //   }
+    // }
+
+    & li:hover a {
+      color: $color-main-dark;
+    }
+  }
+}

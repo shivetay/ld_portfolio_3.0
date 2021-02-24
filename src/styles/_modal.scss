@@ -1,0 +1,25 @@
+.modal {
+  position: fixed;
+  z-index: 20;
+  padding-top: 100px;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  overflow: auto;
+  background-color: $color-bacground-dark-opa-1;
+  backdrop-filter: blur(6px);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+  &-content {
+    background-color: $color-alter-opa;
+    box-shadow: 5px 5px 15px 5px $color-alter-opa;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    width: 35rem;
+    height: 35rem;
+  }
+}
