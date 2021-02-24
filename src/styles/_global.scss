@@ -69,16 +69,21 @@ span {
 
 .circle1,
 .circle2 {
-  background: white;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.3)
-  );
+  background: #ffffff;
+  background: linear-gradient(to right bottom, #ffffffcc, #ffffff4d);
   height: 20rem;
   width: 20rem;
   position: absolute;
   border-radius: 50%;
+}
+
+/* helper classes */
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
 }
 
 .circle1 {
@@ -89,4 +94,13 @@ span {
   bottom: 40%;
   left: 3%;
   z-index: 4;
+}
+
+.ruler {
+  border-top: 1px solid rgba(#ffffff0c, 0.3);
+  position: absolute;
+  top: 82%;
+  height: 50%;
+  left: 0%;
+  right: 0%;
 }

@@ -6,11 +6,13 @@
   top: 0;
   width: 40%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   background-color: $color-bacground-dark-opa-1;
   box-shadow: -15px 0px 15px 5px $color-main-dark-opa;
   backdrop-filter: blur(6px);
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+  animation: modalShow 0.5s forwards;
 
   &-content {
     background-color: $color-alter-opa;
@@ -20,6 +22,56 @@
     top: 50%;
     transform: translateY(-50%);
     border-radius: 5px;
+    width: 35rem;
+    height: 35rem;
+    opacity: 1;
+    animation: contentShow 0.5s forwards;
+  }
+
+  &.out {
+    animation: modalHide 0.5s;
+  }
+}
+
+@keyframes modalShow {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
+  50% {
+    width: 60%;
+    height: 100%;
+  }
+  100% {
+    width: 40%;
+    height: 100%;
+  }
+}
+
+@keyframes modalHide {
+  0% {
+    width: 40%;
+    height: 100%;
+  }
+  50% {
+    width: 60%;
+    height: 100%;
+  }
+  100% {
+    width: 0%;
+    height: 0%;
+  }
+}
+
+@keyframes contentShow {
+  0% {
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+  }
+
+  100% {
+    opacity: 1;
     width: 35rem;
     height: 35rem;
   }
