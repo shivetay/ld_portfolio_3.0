@@ -71,7 +71,7 @@
         width: 75%;
       }
       @include respond(tab-land) {
-        width: 50%;
+        // width: 50%;
       }
       @include respond(tab-port) {
       }
@@ -84,11 +84,10 @@
       right: -55%;
     }
     @include respond(tab-land) {
-      right: -45%;
-      top: -15%;
+      position: static;
     }
     @include respond(phone) {
-      display: none;
+      position: static;
     }
   }
 }
