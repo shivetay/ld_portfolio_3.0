@@ -14,6 +14,16 @@
 
   animation: modalShow 0.5s forwards;
 
+  @include respond(desktop) {
+  }
+  @include respond(desktop-small) {
+  }
+  @include respond(tab-land) {
+    width: 60%;
+  }
+  @include respond(tab-port) {
+  }
+
   &-content {
     background-color: $color-alter-opa;
     box-shadow: 5px 5px 15px 5px $color-alter-opa;
@@ -26,6 +36,18 @@
     height: 35rem;
     opacity: 1;
     animation: contentShow 0.5s forwards;
+
+    @include respond(desktop) {
+    }
+    @include respond(desktop-small) {
+    }
+    @include respond(tab-land) {
+      height: 25rem;
+    }
+    @include respond(tab-port) {
+      height: 20rem;
+      width: 20rem;
+    }
   }
 
   &.out {
@@ -45,6 +67,16 @@
   100% {
     width: 40%;
     height: 100%;
+
+    @include respond(desktop) {
+    }
+    @include respond(desktop-small) {
+    }
+    @include respond(tab-land) {
+      width: 60%;
+    }
+    @include respond(tab-port) {
+    }
   }
 }
 
