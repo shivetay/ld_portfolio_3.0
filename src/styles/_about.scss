@@ -36,14 +36,14 @@
     box-shadow: 15px 15px 15px $color-shadow-light-opa;
     z-index: 10;
 
-    @include respond(desktop) {
-    }
-    @include respond(desktop-small) {
-    }
     @include respond(tab-land) {
       width: 80%;
     }
-    @include respond(tab-port) {
+    @include respond(phone) {
+      width: 65%;
+    }
+    @include respond(xsmall) {
+      // width: 50%;
     }
 
     &-p {
@@ -51,6 +51,16 @@
       padding: 5rem;
       text-align: justify;
       z-index: 10;
+
+      @include respond(tab-land) {
+        // width: 42rem;
+      }
+      @include respond(phone) {
+        // width: 32rem;
+      }
+      @include respond(xsmall) {
+        // width: 40%;
+      }
     }
   }
   &__img {
@@ -70,10 +80,8 @@
       @include respond(desktop-small) {
         width: 75%;
       }
-      @include respond(tab-land) {
-        // width: 50%;
-      }
-      @include respond(tab-port) {
+      @include respond(phone) {
+        width: 60%;
       }
     }
 

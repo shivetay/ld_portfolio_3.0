@@ -30,6 +30,9 @@ html {
   @include respond(phone) {
     font-size: 37%; // 1rem = 6px
   }
+  @include respond(xsmall) {
+    font-size: 25%; // 1rem = 4px
+  }
 }
 
 h1,
@@ -56,6 +59,12 @@ span {
   font-size: $font-normal;
   color: $color-font-light;
   letter-spacing: 1.2px;
+
+  @include respond(phone) {
+    font-size: $font-medium;
+  }
+  @include respond(xsmall) {
+  }
 }
 
 .container {
@@ -105,11 +114,6 @@ span {
   bottom: 40%;
   left: 3%;
 }
-
-// .circle {
-//   animation: rotate 1s linear infinite;
-//   z-index: 4;
-// }
 
 .ruler {
   border-top: 1px solid rgba(#ffffff0c, 0.3);
