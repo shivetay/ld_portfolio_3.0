@@ -25,11 +25,28 @@ const app = {
       }
     };
   },
+  /* loadr function */
+  loaderInit: function () {
+    setTimeout(() => {
+      const getLoader = document.querySelector('.loader');
+      const getCircle = document.querySelectorAll('.circle');
+      const getCobtainer = document.querySelector('.container');
+
+      getLoader.classList.add('hidden');
+      getLoader.classList.remove('visible');
+      getCobtainer.classList.remove('hidden');
+      getCobtainer.classList.add('visible');
+      getCircle.forEach((circles) => {
+        circles.classList.remove('circle');
+      });
+    }, 4000);
+  },
   /* app init */
   init: function () {
     console.log('*** App starting ***');
 
     this.modalInit();
+    this.loaderInit();
   },
 };
 

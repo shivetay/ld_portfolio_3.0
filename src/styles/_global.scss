@@ -84,6 +84,17 @@ span {
 
 .inactive {
   display: none;
+  transition: all 0.4s ease-in;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+
+.visible {
+  opacity: 1;
+  transition: all 0.4s ease-in;
 }
 
 .circle1 {
@@ -93,6 +104,10 @@ span {
 .circle2 {
   bottom: 40%;
   left: 3%;
+}
+
+.circle {
+  animation: rotate 1s linear infinite;
   z-index: 4;
 }
 
@@ -103,4 +118,15 @@ span {
   height: 50%;
   left: 0%;
   right: 0%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    z-index: 1;
+  }
+  to {
+    transform: rotate(360deg);
+    z-index: 4;
+  }
 }
