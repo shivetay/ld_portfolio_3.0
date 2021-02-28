@@ -36,8 +36,10 @@ const app = {
       getLoader.classList.remove('visible');
       getCobtainer.classList.remove('hidden');
       getCobtainer.classList.add('visible');
+
       getCircle.forEach((circles) => {
-        circles.classList.remove('circle');
+        circles.classList.remove('hidden');
+        circles.classList.add('visible');
       });
     }, 4000);
   },

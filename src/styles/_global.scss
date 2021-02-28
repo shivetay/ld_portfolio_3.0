@@ -106,10 +106,10 @@ span {
   left: 3%;
 }
 
-.circle {
-  animation: rotate 1s linear infinite;
-  z-index: 4;
-}
+// .circle {
+//   animation: rotate 1s linear infinite;
+//   z-index: 4;
+// }
 
 .ruler {
   border-top: 1px solid rgba(#ffffff0c, 0.3);
@@ -118,15 +118,4 @@ span {
   height: 50%;
   left: 0%;
   right: 0%;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-    z-index: 1;
-  }
-  to {
-    transform: rotate(360deg);
-    z-index: 4;
-  }
 }
