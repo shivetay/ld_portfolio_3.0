@@ -6,12 +6,6 @@ This is a protfolio site made with VAnila JS and my [Webpack Boilerplate](https:
 
 [demo](www.lukaszdawidowicz.pl)
 
-## Main functionalities
-
-- custom slider
-- custom modals
-- serverless form
-
 ## Getting started
 
 ### Installing
